@@ -5,10 +5,10 @@
         <can_delegate>true</can_delegate>
         <description/>
         <elevated_privilege>false</elevated_privilege>
-        <encryption_context/>
         <grantable>true</grantable>
         <includes_roles/>
         <name>x_snc_slack_points.slack_point_user</name>
+        <scoped_admin>false</scoped_admin>
         <suffix>slack_point_user</suffix>
         <sys_class_name>sys_user_role</sys_class_name>
         <sys_created_by>josh.nerius</sys_created_by>
