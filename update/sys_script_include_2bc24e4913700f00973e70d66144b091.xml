@@ -9,11 +9,11 @@
         <name>SlackClient</name>
         <script><![CDATA[var SlackClient = Class.create();
 SlackClient.prototype = {
-    initialize: function() {
+	initialize: function() {
 		this.token    = gs.getProperty('x_snc_slack_points.slack_bot_token');
 		this.endpoint = 'https://slack.com/api'; 
-    },
-	
+	},
+
 	getUserInfo: function(userId) {
 		var rm = this._newGetRequest('/users.info'); 
 		rm.setQueryParameter('user', userId); 
@@ -21,7 +21,7 @@ SlackClient.prototype = {
 		var body = response.getBody(); 
 		return JSON.parse(body); 
 	},
-	
+
 	_newGetRequest: function(resource) {
 		var rm = new sn_ws.RESTMessageV2(); 
 		rm.setEndpoint(this.endpoint + resource); 
@@ -29,24 +29,49 @@ SlackClient.prototype = {
 		rm.setQueryParameter('token', this.token); 
 		return rm; 
 	}, 
-	
+
 	newMethod2: function() {
-		
+
 	},
 
-    type: 'SlackClient'
+	sendChat: function(channel, message, thread_ts){
+		var rm = new sn_ws.RESTMessageV2();
+		rm.setLogLevel('all');
+		rm.setHttpMethod('POST');
+		rm.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded'); 
+		rm.setEndpoint('https://slack.com/api/chat.postMessage');
+
+		var bodyString = '';
+		bodyString += 'token=' + this.token; 
+		bodyString += '&channel=' + gs.urlEncode(channel);
+
+		if (thread_ts) {
+			bodyString += '&thread_ts=' + gs.urlEncode(thread_ts); 
+		}
+
+		//bodyString += '&text=' + gs.urlEncode('Congrats ' + thing + ' you now have ' + grSlackUser.points + ' points'); 
+		var randomMessage = new x_snc_slack_points.RandomMessage();
+		bodyString += '&text=' + gs.urlEncode(message);
+
+
+		rm.setRequestBody(bodyString);
+		var response = rm.execute();
+		return response;
+	},
+
+	type: 'SlackClient'
 };]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>josh.nerius</sys_created_by>
         <sys_created_on>2017-08-23 21:08:30</sys_created_on>
         <sys_id>2bc24e4913700f00973e70d66144b091</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>SlackClient</sys_name>
         <sys_package display_value="Slack Points Thing" source="x_snc_slack_points">4f6df3c813444f009718b9b76144b02c</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Slack Points Thing">4f6df3c813444f009718b9b76144b02c</sys_scope>
         <sys_update_name>sys_script_include_2bc24e4913700f00973e70d66144b091</sys_update_name>
-        <sys_updated_by>jnerius</sys_updated_by>
-        <sys_updated_on>2017-10-19 15:41:47</sys_updated_on>
+        <sys_updated_by>earlduque</sys_updated_by>
+        <sys_updated_on>2018-10-08 23:35:51</sys_updated_on>
     </sys_script_include>
 </record_update>

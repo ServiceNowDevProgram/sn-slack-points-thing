@@ -20,8 +20,6 @@
         <query>v_ws_editor.do?sysparm_query=name=x_snc_slack_points_import</query>
         <report/>
         <roles/>
-        <survey/>
-        <survey_overwrite>true</survey_overwrite>
         <sys_class_name>sys_app_module</sys_class_name>
         <sys_created_by>josh.nerius</sys_created_by>
         <sys_created_on>2017-08-21 21:38:57</sys_created_on>
