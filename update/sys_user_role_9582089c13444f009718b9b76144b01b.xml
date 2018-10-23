@@ -9,6 +9,7 @@
         <grantable>true</grantable>
         <includes_roles/>
         <name>x_snc_slack_points.slack_user_user</name>
+        <scoped_admin>false</scoped_admin>
         <suffix>slack_user_user</suffix>
         <sys_class_name>sys_user_role</sys_class_name>
         <sys_created_by>josh.nerius</sys_created_by>

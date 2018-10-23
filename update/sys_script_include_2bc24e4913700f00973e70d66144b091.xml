@@ -4,6 +4,7 @@
         <access>package_private</access>
         <active>true</active>
         <api_name>x_snc_slack_points.SlackClient</api_name>
+        <caller_access/>
         <client_callable>false</client_callable>
         <description/>
         <name>SlackClient</name>
