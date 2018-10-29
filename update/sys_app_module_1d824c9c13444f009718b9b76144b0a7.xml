@@ -20,8 +20,6 @@
         <query/>
         <report/>
         <roles>x_snc_slack_points.slack_user_user</roles>
-        <survey/>
-        <survey_overwrite>true</survey_overwrite>
         <sys_class_name>sys_app_module</sys_class_name>
         <sys_created_by>josh.nerius</sys_created_by>
         <sys_created_on>2017-07-14 21:03:21</sys_created_on>
