@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_embedded_help_content">
+    <sys_embedded_help_content action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category>change-me</category>
+        <content><![CDATA[ <h1 class="title topictitle1">Assessment metric types</h1>  <div class="body conbody">  <p class="p">Assessment metrics enable you to evaluate, score, and rank records from a table in a   system.</p>  <p class="p">Review the existing assessment metric types and configure them to align with your business   needs.</p>  <p class="p">To modify an assessment metric type, click the assessment metric type name.</p>  <p class="p">To create an assessment metric type, click <span class="ph uicontrol">New</span>.</p> </div>]]></content>
+        <last_sync>2018-12-11 21:16:13</last_sync>
+        <modifier>normal</modifier>
+        <name>asmt_metric_type_list-normal</name>
+        <page>asmt_metric_type_list</page>
+        <product>1</product>
+        <qualifier/>
+        <role/>
+        <role_order>1000</role_order>
+        <snc_created>true</snc_created>
+        <sys_class_name>sys_embedded_help_content</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2018-10-25 21:44:12</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>87e392be4fd1af400d952b8ca310c7ce</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>asmt_metric_type_list-normal</sys_name>
+        <sys_package display_value="Slack Points Thing" source="x_snc_slack_points">4f6df3c813444f009718b9b76144b02c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Slack Points Thing">4f6df3c813444f009718b9b76144b02c</sys_scope>
+        <sys_update_name>sys_embedded_help_content_87e392be4fd1af400d952b8ca310c7ce</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2018-12-11 21:16:13</sys_updated_on>
+        <version>k</version>
+    </sys_embedded_help_content>
+    <sys_translated_text action="delete_multiple" query="documentkey=87e392be4fd1af400d952b8ca310c7ce"/>
+</record_update>

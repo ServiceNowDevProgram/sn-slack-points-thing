@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_definition">
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ws_definition">
     <sys_ws_definition action="INSERT_OR_UPDATE">
         <active>true</active>
         <base_uri>/api/x_snc_slack_points/handle_slack_events</base_uri>

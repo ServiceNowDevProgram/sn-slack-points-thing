@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_operation">
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ws_operation">
     <sys_ws_operation action="INSERT_OR_UPDATE">
         <active>true</active>
         <consumes>application/json,application/xml,text/xml</consumes>
@@ -43,7 +44,6 @@
         <request_example/>
         <requires_acl_authorization>true</requires_acl_authorization>
         <requires_authentication>false</requires_authentication>
-        <requires_snc_internal_role>false</requires_snc_internal_role>
         <short_description/>
         <sys_class_name>sys_ws_operation</sys_class_name>
         <sys_created_by>j4rodm</sys_created_by>

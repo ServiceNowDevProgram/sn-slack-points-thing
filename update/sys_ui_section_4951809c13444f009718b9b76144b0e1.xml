@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><record_update>
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
     <sys_ui_section caption="" section_id="4951809c13444f009718b9b76144b0e1" sys_domain="global" table="x_snc_slack_points_slack_event" version="3" view="">
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>payload</element>

@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><database>
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
     <element label="Slack Point" max_length="40" name="x_snc_slack_points_point" type="collection">
         <element label="Giver" max_length="40" name="giver" type="string"/>
         <element label="Source event" max_length="32" name="source_event" reference="x_snc_slack_points_slack_event" type="reference"/>

@@ -1,19 +1,20 @@
-<?xml version="1.0" encoding="UTF-8"?><record_update>
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
     <sys_ui_list parent="" relationship="" sys_domain="global" table="x_snc_slack_points_slack_event" version="2" view="">
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>payload</element>
-            <list_id display_value="x_snc_slack_points_slack_event" element="NULL" name="x_snc_slack_points_slack_event" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">91d2c8f5db16630064dcf5861d961933</list_id>
+            <list_id display_value="x_snc_slack_points_slack_event" element="NULL" name="x_snc_slack_points_slack_event" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">57bd8ff04f2623000d952b8ca310c706</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>0</position>
             <sum>false</sum>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-12-11 01:39:10</sys_created_on>
-            <sys_id>d5d2c8f5db16630064dcf5861d961934</sys_id>
+            <sys_created_by>admin-eduque</sys_created_by>
+            <sys_created_on>2018-12-21 00:07:26</sys_created_on>
+            <sys_id>5bbd8ff04f2623000d952b8ca310c707</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-12-11 01:39:10</sys_updated_on>
+            <sys_updated_by>admin-eduque</sys_updated_by>
+            <sys_updated_on>2018-12-21 00:07:26</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list action="INSERT_OR_UPDATE">
             <average_value>false</average_value>

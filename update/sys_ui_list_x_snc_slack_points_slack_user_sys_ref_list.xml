@@ -1,9 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?><record_update>
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
     <sys_ui_list parent="" relationship="" sys_domain="global" table="x_snc_slack_points_slack_user" version="2" view="sys_ref_list">
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>sys_id</element>
-            <list_id display_value="x_snc_slack_points_slack_user" element="NULL" name="x_snc_slack_points_slack_user" parent="NULL" relationship="NULL" sys_domain="global" view="199e1272db20230064dcf5861d961962">1fa57bd813b043009718b9b76144b08e</list_id>
+            <list_id display_value="x_snc_slack_points_slack_user" element="NULL" name="x_snc_slack_points_slack_user" parent="NULL" relationship="NULL" sys_domain="global" view="840d3162b92013006517ce7df7ee468d">1fa57bd813b043009718b9b76144b08e</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>0</position>
@@ -40,7 +41,7 @@
             <sys_updated_by>josh.nerius</sys_updated_by>
             <sys_updated_on>2017-08-21 21:32:48</sys_updated_on>
             <sys_user/>
-            <view display_value="Reference List" name="sys_ref_list">199e1272db20230064dcf5861d961962</view>
+            <view display_value="Reference List" name="sys_ref_list">840d3162b92013006517ce7df7ee468d</view>
             <view_name/>
         </sys_ui_list>
     </sys_ui_list>

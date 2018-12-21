@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_security_acl_role">
     <sys_security_acl_role action="INSERT_OR_UPDATE">
         <sys_class_name>sys_security_acl_role</sys_class_name>
         <sys_created_by>josh.nerius</sys_created_by>

@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><database>
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
     <element label="Slack User" max_length="40" name="x_snc_slack_points_slack_user" type="collection">
         <element label="Other points" max_length="40" name="other_points" type="integer"/>
         <element label="Points" max_length="40" name="points" type="integer"/>
