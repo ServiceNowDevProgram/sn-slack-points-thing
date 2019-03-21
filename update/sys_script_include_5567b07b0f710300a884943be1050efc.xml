@@ -22,7 +22,7 @@ RandomMessage.prototype = {
 	initialize: function() {
 	},
 	
-	getMessage : function(user, points) {
+	getMessage : function(user, points, total, rank) {
 		var x = getRandomInt(0,5);
 		//var x = 1;
 		var bodyString = '';
@@ -49,6 +49,14 @@ RandomMessage.prototype = {
 				
 			
 		} // end switch
+		
+		bodyString += ' (' + total + ' total)';
+		var commendation = '';
+		if (rank == 1) commendation = ':first_place_medal:';
+		else if (rank == 2) commendation = ':second_place_medal:';
+		else if (rank == 3) commendation = ':third_place_medal:';
+		else if (rank >= 4 && rank <= 10) commendation = ':star:';
+		bodyString += ' ' + commendation;
 		return bodyString;
 		
 		function getRandomInt(min, max) {
@@ -65,13 +73,13 @@ RandomMessage.prototype = {
         <sys_created_by>tgbates</sys_created_by>
         <sys_created_on>2017-10-20 21:56:07</sys_created_on>
         <sys_id>5567b07b0f710300a884943be1050efc</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_name>RandomMessage</sys_name>
         <sys_package display_value="Slack Points Thing" source="x_snc_slack_points">4f6df3c813444f009718b9b76144b02c</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Slack Points Thing">4f6df3c813444f009718b9b76144b02c</sys_scope>
         <sys_update_name>sys_script_include_5567b07b0f710300a884943be1050efc</sys_update_name>
-        <sys_updated_by>tgbates</sys_updated_by>
-        <sys_updated_on>2017-10-20 22:28:30</sys_updated_on>
+        <sys_updated_by>admin-eduque</sys_updated_by>
+        <sys_updated_on>2019-03-21 18:04:39</sys_updated_on>
     </sys_script_include>
 </record_update>

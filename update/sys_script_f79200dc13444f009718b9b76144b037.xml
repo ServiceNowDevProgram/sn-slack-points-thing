@@ -28,26 +28,26 @@
         <rest_variables/>
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
-	
+
 	// TODO: Move this logic into a Script Include
 	var payloadObject = JSON.parse(current.payload); 
-	
+
 	// DO NOT process bot messages
 	if (payloadObject.event.subtype == 'bot_message') {
 		return; 
 	}
-	
+
 	var matches = payloadObject.event.text.match(/\s?\@?(\S+)\s?\+\+/g); 
-	
+
 	matches.forEach(function (t) {
 		var thing = t.replace('++', ''); 
 		thing = thing.trim();
-		
+
 		// Check for self-points
 		if (thing.contains(payloadObject.event.user)) {
 			return; 
 		}
-		
+
 		var grSlackUser = new GlideRecord('x_snc_slack_points_slack_user'); 
 		grSlackUser.addQuery('user_id', thing); 
 		grSlackUser.query(); 
@@ -61,23 +61,44 @@
 			grSlackUser.points = 1; 
 			grSlackUser.insert(); 
 		}
-		
-		var grPointRecord = new GlideRecord('x_snc_slack_points_point');
- 		grPointRecord.initialize();
- 		grPointRecord.setValue('giver', payloadObject.event.user);
- 		grPointRecord.setValue('target', grSlackUser.getUniqueValue());
- 		grPointRecord.setValue('source_event', current.getUniqueValue());
- 		grPointRecord.setValue('text', payloadObject.event.text);
- 		grPointRecord.insert();
 
-       var randomMessage = new x_snc_slack_points.RandomMessage();
-	   var message = randomMessage.getMessage(thing, grSlackUser.points);
-		
+		var grPointRecord = new GlideRecord('x_snc_slack_points_point');
+		grPointRecord.initialize();
+		grPointRecord.setValue('giver', payloadObject.event.user);
+		grPointRecord.setValue('target', grSlackUser.getUniqueValue());
+		grPointRecord.setValue('source_event', current.getUniqueValue());
+		grPointRecord.setValue('text', payloadObject.event.text);
+		grPointRecord.insert();
+
+		var count = new GlideAggregate('x_snc_slack_points_point');
+		count.addQuery('target', grSlackUser.getUniqueValue());
+		count.addEncodedQuery('sys_created_onONLast 3 months@javascript:gs.beginningOfLast3Months()@javascript:gs.endOfLast3Months()');
+		count.addAggregate('COUNT');
+		count.query();
+		var score = 0;
+		if(count.next()) 
+			score = count.getAggregate('COUNT');
+
+		var rank = '';
+		var leader = new GlideAggregate('x_snc_slack_points_point');
+		leader.addEncodedQuery('sys_created_onONLast 3 months@javascript:gs.beginningOfLast3Months()@javascript:gs.endOfLast3Months()');
+		leader.orderByAggregate('COUNT', 'target');
+		leader.addAggregate('COUNT', 'target');
+		leader.query();
+		var this_rank = 0;
+		while (leader.next()){
+			this_rank++;
+			if (leader.target == grSlackUser.getUniqueValue()) rank = this_rank;
+		}
+
+		var randomMessage = new x_snc_slack_points.RandomMessage();
+		var message = randomMessage.getMessage(thing, score, grSlackUser.points, rank);
+
 		var response = new SlackClient().sendChat(payloadObject.event.channel, message, payloadObject.event.thread_ts);
 		var responseBody = response.getBody();
 		var statusCode = response.getStatusCode();
 	}); 
-	
+
 	// var userId = payloadObject.event.text.match(/\s?\@?(\S+)\s?\+\+/)[1]; 
 
 })(current, previous);]]></script>
@@ -87,15 +108,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>f79200dc13444f009718b9b76144b037</sys_id>
-        <sys_mod_count>39</sys_mod_count>
+        <sys_mod_count>44</sys_mod_count>
         <sys_name>Process Points</sys_name>
         <sys_overrides/>
         <sys_package display_value="Slack Points Thing" source="x_snc_slack_points">4f6df3c813444f009718b9b76144b02c</sys_package>
         <sys_policy/>
         <sys_scope display_value="Slack Points Thing">4f6df3c813444f009718b9b76144b02c</sys_scope>
         <sys_update_name>sys_script_f79200dc13444f009718b9b76144b037</sys_update_name>
-        <sys_updated_by>ajb</sys_updated_by>
-        <sys_updated_on>2019-01-08 16:23:56</sys_updated_on>
+        <sys_updated_by>admin-eduque</sys_updated_by>
+        <sys_updated_on>2019-03-21 17:55:59</sys_updated_on>
         <template/>
         <when>async</when>
     </sys_script>
