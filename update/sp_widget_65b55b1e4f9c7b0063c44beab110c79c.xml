@@ -19,10 +19,10 @@
         <docs/>
         <field_list/>
         <has_preview>true</has_preview>
-        <id>points_leaderboard</id>
+        <id>points_leaderboard_recent</id>
         <internal>false</internal>
-        <link/>
-        <name>Points Leaderboard</name>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>Points Leaderboard Recent</name>
         <option_schema/>
         <public>true</public>
         <roles/>
@@ -46,52 +46,54 @@
 		slack_user.query();
 		var results = [];
 		while (slack_user.next()) {
-			var item = {};
-			if (slack_user.getValue('user_name')){
-				item.name = slack_user.getValue('user_name');
-			} else {
-				item.name = slack_user.getValue('user_id');
+			var usercount = new GlideAggregate('x_snc_slack_points_point');
+			usercount.addEncodedQuery('sys_created_onONLast 3 months@javascript:gs.beginningOfLast3Months()@javascript:gs.endOfLast3Months()');
+			usercount.addQuery('target', slack_user.getUniqueValue());
+			usercount.addAggregate('COUNT');
+			usercount.query();
+			if (usercount.next()){
+				var result = {};
+				result.name = slack_user.getDisplayValue('user_id');
+				result.points = usercount.getAggregate('COUNT');
+				results.push(result);
 			}
-			item.points = slack_user.getValue('points');
-			results.push(item);
 		}
 		return results;
 	}
 
 	function getLeaderboard() {
 		var items = [];
-		var slack_user_leaders = new GlideRecord('x_snc_slack_points_slack_user');
-		slack_user_leaders.orderByDesc('points');
-		slack_user_leaders.setLimit(20);
-		slack_user_leaders.query();
-		while(slack_user_leaders.next()){
+		var count = new GlideAggregate('x_snc_slack_points_point');
+		count.addEncodedQuery('sys_created_onONLast 3 months@javascript:gs.beginningOfLast3Months()@javascript:gs.endOfLast3Months()');
+		count.orderByAggregate('COUNT', 'target');
+		count.addAggregate('COUNT', 'target');
+		count.query();
+		while (count.next()){
 			var item = {};
-			if (slack_user_leaders.getValue('user_name')){
-				item.name = slack_user_leaders.getValue('user_name');
-			} else {
-				item.name = slack_user_leaders.getValue('user_id');
-			}
-			item.points = slack_user_leaders.getValue('points');
+			item.name = count.getDisplayValue('target').toString();
+			item.points = 0;
+			item.points = count.getAggregate('COUNT', 'target');
 			items.push(item);
 		}
+		
 		return items;
 	}
 })();]]></script>
         <servicenow>false</servicenow>
         <sys_class_name>sp_widget</sys_class_name>
-        <sys_created_by>earlduque</sys_created_by>
-        <sys_created_on>2018-10-08 19:54:38</sys_created_on>
-        <sys_id>18d71e554fcd63400d952b8ca310c796</sys_id>
-        <sys_mod_count>69</sys_mod_count>
-        <sys_name>Points Leaderboard</sys_name>
+        <sys_created_by>admin-eduque</sys_created_by>
+        <sys_created_on>2019-03-22 16:23:03</sys_created_on>
+        <sys_id>65b55b1e4f9c7b0063c44beab110c79c</sys_id>
+        <sys_mod_count>23</sys_mod_count>
+        <sys_name>Points Leaderboard Recent</sys_name>
         <sys_package display_value="Slack Points Thing" source="x_snc_slack_points">4f6df3c813444f009718b9b76144b02c</sys_package>
         <sys_policy/>
         <sys_scope display_value="Slack Points Thing">4f6df3c813444f009718b9b76144b02c</sys_scope>
-        <sys_update_name>sp_widget_18d71e554fcd63400d952b8ca310c796</sys_update_name>
+        <sys_update_name>sp_widget_65b55b1e4f9c7b0063c44beab110c79c</sys_update_name>
         <sys_updated_by>admin-eduque</sys_updated_by>
-        <sys_updated_on>2019-03-22 16:24:51</sys_updated_on>
+        <sys_updated_on>2019-03-22 16:41:47</sys_updated_on>
         <template><![CDATA[<div class="panel panel-primary">
-  <div class="panel-heading">Points Thing Leaderboard (All Time)</div>
+  <div class="panel-heading">Points Thing Leaderboard (Last 3 Months)</div>
   <div class="panel-body">
     <input class="form-control" type="search" placeholder="Start typing here to search for specific users" ng-model="c.data.keywords" ng-change="serverUpdate()" ng-model-options="{debounce: 250}" />
     <h5 ng-if="!c.data.keywords">Showing the top 20</h5>

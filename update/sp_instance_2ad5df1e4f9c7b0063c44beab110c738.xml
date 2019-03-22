@@ -6,27 +6,27 @@
         <css/>
         <glyph/>
         <id/>
-        <order>2</order>
+        <order>1</order>
         <roles/>
         <short_description/>
         <size>md</size>
         <sp_column display_value="1">d0d7da954fcd63400d952b8ca310c796</sp_column>
-        <sp_widget display_value="Points Leaderboard">18d71e554fcd63400d952b8ca310c796</sp_widget>
+        <sp_widget display_value="Points Leaderboard Recent">65b55b1e4f9c7b0063c44beab110c79c</sp_widget>
         <sys_class_name>sp_instance</sys_class_name>
-        <sys_created_by>earlduque</sys_created_by>
-        <sys_created_on>2018-10-08 19:54:38</sys_created_on>
-        <sys_id>90d7da954fcd63400d952b8ca310c798</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_created_by>admin-eduque</sys_created_by>
+        <sys_created_on>2019-03-22 16:23:40</sys_created_on>
+        <sys_id>2ad5df1e4f9c7b0063c44beab110c738</sys_id>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package display_value="Slack Points Thing" source="x_snc_slack_points">4f6df3c813444f009718b9b76144b02c</sys_package>
         <sys_policy/>
         <sys_scope display_value="Slack Points Thing">4f6df3c813444f009718b9b76144b02c</sys_scope>
-        <sys_update_name>sp_instance_90d7da954fcd63400d952b8ca310c798</sys_update_name>
+        <sys_update_name>sp_instance_2ad5df1e4f9c7b0063c44beab110c738</sys_update_name>
         <sys_updated_by>admin-eduque</sys_updated_by>
         <sys_updated_on>2019-03-22 16:23:40</sys_updated_on>
         <title/>
         <url/>
         <widget_parameters/>
     </sp_instance>
-    <sys_translated_text action="delete_multiple" query="documentkey=90d7da954fcd63400d952b8ca310c798"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=2ad5df1e4f9c7b0063c44beab110c738"/>
 </record_update>
