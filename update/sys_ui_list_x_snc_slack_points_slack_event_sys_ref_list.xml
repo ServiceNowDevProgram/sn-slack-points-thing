@@ -3,7 +3,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>sys_id</element>
-            <list_id display_value="x_snc_slack_points_slack_event" element="NULL" name="x_snc_slack_points_slack_event" parent="NULL" relationship="NULL" sys_domain="global" view="f6232273b8130300651775b34d8f5187">ff3df5154f8d63400d952b8ca310c7c3</list_id>
+            <list_id display_value="x_snc_slack_points_slack_event" element="NULL" name="x_snc_slack_points_slack_event" parent="NULL" relationship="NULL" sys_domain="global" view="ec4001623433230078507f0289bd019d">ff3df5154f8d63400d952b8ca310c7c3</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>0</position>
@@ -40,7 +40,7 @@
             <sys_updated_by>earlduque</sys_updated_by>
             <sys_updated_on>2018-10-08 17:58:33</sys_updated_on>
             <sys_user/>
-            <view display_value="Reference List" name="sys_ref_list">f6232273b8130300651775b34d8f5187</view>
+            <view display_value="Reference List" name="sys_ref_list">ec4001623433230078507f0289bd019d</view>
             <view_name/>
         </sys_ui_list>
     </sys_ui_list>

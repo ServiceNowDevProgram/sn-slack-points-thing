@@ -23,33 +23,21 @@ RandomMessage.prototype = {
 	},
 	
 	getMessage : function(user, points, total, rank) {
-		var x = getRandomInt(0,5);
+		var random_messages = [
+			'Congrats ' + user + ' you now have ' + points + ' points',
+			'Good work ' + user + ' you now have ' + points + ' points',
+			'Good going ' + user + ' you now have ' + points + ' points',
+			'Way to help out ' + user + ' you now have ' + points + ' points',
+			'Give a hear-hear for ' + user + ' you now have ' + points + ' points',
+			'Who has two thumbs and one more point? ' + user + ' does.  You now have ' + points + ' points',
+			'Thank you ' + user + ' you now have ' + points + ' points',
+			'Helping the community, one point at a time! ' + user + ' now has ' + points + ' points',
+			'Who\'s awesome? ' + user + ' is awesome! You now have ' + points + ' points'
+		];
+		var x = getRandomInt(0,random_messages.length-1);
 		//var x = 1;
-		var bodyString = '';
-		switch (x) {
-			case 0: bodyString += 'Congrats ' + user + ' you now have ' + points + ' points';
-			//bodyString += '&text=' + gs.urlEncode('Congrats ' + thing + ' you now have ' + points + ' points');
-			break;
-			
-			case 1: bodyString += 'Good work ' + user + ' you now have ' + points + ' points';
-			break;
-			
-			case 2: bodyString += 'Good going ' + user + ' you now have ' + points + ' points';
-			break;
-			
-			case 3: bodyString += 'Way to help out ' + user + ' you now have ' + points + ' points';
-			break;
-				
-			case 4: bodyString += 'Give a hear-hear for ' + user + ' you now have ' + points + ' points';
-			break; 
-			
-			case 5: bodyString += 'Who has two thumbs and one more point? ' + user + ' does.  You now have ' + points + ' points';
-			break; 
-			
-				
-			
-		} // end switch
-		
+		var bodyString = random_messages[x];
+					
 		bodyString += ' (' + total + ' total)';
 		var commendation = '';
 		if (rank == 1) commendation = ':first_place_medal:';
@@ -73,13 +61,13 @@ RandomMessage.prototype = {
         <sys_created_by>tgbates</sys_created_by>
         <sys_created_on>2017-10-20 21:56:07</sys_created_on>
         <sys_id>5567b07b0f710300a884943be1050efc</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>16</sys_mod_count>
         <sys_name>RandomMessage</sys_name>
         <sys_package display_value="Slack Points Thing" source="x_snc_slack_points">4f6df3c813444f009718b9b76144b02c</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Slack Points Thing">4f6df3c813444f009718b9b76144b02c</sys_scope>
         <sys_update_name>sys_script_include_5567b07b0f710300a884943be1050efc</sys_update_name>
         <sys_updated_by>admin-eduque</sys_updated_by>
-        <sys_updated_on>2019-03-21 18:04:39</sys_updated_on>
+        <sys_updated_on>2019-05-29 16:39:20</sys_updated_on>
     </sys_script_include>
 </record_update>
