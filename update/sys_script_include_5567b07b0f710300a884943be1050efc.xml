@@ -50,7 +50,20 @@ RandomMessage.prototype = {
 			
 		} // end switch
 		
-		bodyString += ' (' + total + ' total)';
+		var level; //Community level scoring divided by 10
+		if (parseInt(total) < 20) level = 0;
+		else if (parseInt(total) < 50) level = 1;
+		else if (parseInt(total) < 100) level = 2;
+		else if (parseInt(total) < 200) level = 3;
+		else if (parseInt(total) < 400) level = 4;
+		else if (parseInt(total) < 800) level = 5;
+		else if (parseInt(total) < 1500) level = 6;
+		else if (parseInt(total) < 3000) level = 7;
+		else if (parseInt(total) < 5000) level = 8;
+		else if (parsetInt(total) < 10000) level = 9;
+		else level = 10;	
+		if (level != 0) bodyString += ' (Level ' + level + ')';
+		
 		var commendation = '';
 		if (rank == 1) commendation = ':first_place_medal:';
 		else if (rank == 2) commendation = ':second_place_medal:';
@@ -73,13 +86,13 @@ RandomMessage.prototype = {
         <sys_created_by>tgbates</sys_created_by>
         <sys_created_on>2017-10-20 21:56:07</sys_created_on>
         <sys_id>5567b07b0f710300a884943be1050efc</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>16</sys_mod_count>
         <sys_name>RandomMessage</sys_name>
         <sys_package display_value="Slack Points Thing" source="x_snc_slack_points">4f6df3c813444f009718b9b76144b02c</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Slack Points Thing">4f6df3c813444f009718b9b76144b02c</sys_scope>
         <sys_update_name>sys_script_include_5567b07b0f710300a884943be1050efc</sys_update_name>
         <sys_updated_by>admin-eduque</sys_updated_by>
-        <sys_updated_on>2019-03-21 18:04:39</sys_updated_on>
+        <sys_updated_on>2019-05-29 16:25:00</sys_updated_on>
     </sys_script_include>
 </record_update>
