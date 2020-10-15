@@ -8,6 +8,7 @@
         <internal>false</internal>
         <public>true</public>
         <roles/>
+        <seo_script/>
         <short_description/>
         <sys_class_name>sp_page</sys_class_name>
         <sys_created_by>earlduque</sys_created_by>
@@ -22,6 +23,7 @@
         <sys_updated_by>earlduque</sys_updated_by>
         <sys_updated_on>2018-10-08 21:01:44</sys_updated_on>
         <title>Points Leaderboard</title>
+        <use_seo_script>false</use_seo_script>
     </sp_page>
     <sys_translated_text action="delete_multiple" query="documentkey=94d71e554fcd63400d952b8ca310c799"/>
 </record_update>

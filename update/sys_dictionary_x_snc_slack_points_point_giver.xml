@@ -53,15 +53,15 @@
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>josh.nerius</sys_created_by>
         <sys_created_on>2017-08-21 21:20:15</sys_created_on>
-        <sys_id>80ab547bdb0673008966ff561d9619d1</sys_id>
+        <sys_id>cafa70362f33101033262e5df699b606</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Giver</sys_name>
         <sys_package display_value="Slack Points Thing" source="x_snc_slack_points">4f6df3c813444f009718b9b76144b02c</sys_package>
         <sys_policy/>
         <sys_scope display_value="Slack Points Thing">4f6df3c813444f009718b9b76144b02c</sys_scope>
         <sys_update_name>sys_dictionary_x_snc_slack_points_point_giver</sys_update_name>
-        <sys_updated_by>andrew.barnes</sys_updated_by>
-        <sys_updated_on>2020-02-18 22:30:01</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-15 10:26:05</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

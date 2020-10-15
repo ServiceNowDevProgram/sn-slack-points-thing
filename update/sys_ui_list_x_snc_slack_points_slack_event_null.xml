@@ -3,17 +3,17 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>payload</element>
-            <list_id display_value="x_snc_slack_points_slack_event" element="NULL" name="x_snc_slack_points_slack_event" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">757662b3db0288508966ff561d961992</list_id>
+            <list_id display_value="x_snc_slack_points_slack_event" element="NULL" name="x_snc_slack_points_slack_event" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">94ab34762f33101033262e5df699b6b7</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>0</position>
             <sum>false</sum>
-            <sys_created_by>ajb</sys_created_by>
-            <sys_created_on>2019-01-08 16:29:53</sys_created_on>
-            <sys_id>f93b97b2dbf2a3408ae4dfea5e9619f3</sys_id>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-10-15 10:28:53</sys_created_on>
+            <sys_id>10ab34762f33101033262e5df699b6b9</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>ajb</sys_updated_by>
-            <sys_updated_on>2019-01-08 16:29:53</sys_updated_on>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-10-15 10:28:53</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
