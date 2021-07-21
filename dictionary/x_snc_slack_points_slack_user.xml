@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="Slack User" max_length="40" name="x_snc_slack_points_slack_user" sizeclass="2498" type="collection">
+    <element label="Slack User" max_length="40" name="x_snc_slack_points_slack_user" type="collection">
         <element attributes="edge_encryption_enabled=true" label="Other points" max_length="40" name="other_points" type="integer"/>
         <element attributes="edge_encryption_enabled=true" label="Points" max_length="40" name="points" type="integer"/>
         <element label="User ID" max_length="40" name="user_id" type="string"/>

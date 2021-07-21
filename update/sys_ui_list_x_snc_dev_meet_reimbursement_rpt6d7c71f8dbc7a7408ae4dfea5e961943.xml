@@ -3,7 +3,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>number</element>
-            <list_id display_value="x_snc_dev_meet_reimbursement" element="NULL" name="x_snc_dev_meet_reimbursement" parent="NULL" relationship="NULL" sys_domain="global" view="6d7c35f8dbc7a7408ae4dfea5e9619bc">b26f357cdbc7a7408ae4dfea5e961954</list_id>
+            <list_id display_value="x_snc_dev_meet_reimbursement" element="NULL" name="x_snc_dev_meet_reimbursement" parent="NULL" relationship="NULL" sys_domain="global" view="76bd01642f213010cd70e83df699b688">b26f357cdbc7a7408ae4dfea5e961954</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>0</position>
@@ -18,7 +18,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>short_description</element>
-            <list_id display_value="x_snc_dev_meet_reimbursement" element="NULL" name="x_snc_dev_meet_reimbursement" parent="NULL" relationship="NULL" sys_domain="global" view="6d7c35f8dbc7a7408ae4dfea5e9619bc">b26f357cdbc7a7408ae4dfea5e961954</list_id>
+            <list_id display_value="x_snc_dev_meet_reimbursement" element="NULL" name="x_snc_dev_meet_reimbursement" parent="NULL" relationship="NULL" sys_domain="global" view="76bd01642f213010cd70e83df699b688">b26f357cdbc7a7408ae4dfea5e961954</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>1</position>
@@ -33,7 +33,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>state</element>
-            <list_id display_value="x_snc_dev_meet_reimbursement" element="NULL" name="x_snc_dev_meet_reimbursement" parent="NULL" relationship="NULL" sys_domain="global" view="6d7c35f8dbc7a7408ae4dfea5e9619bc">b26f357cdbc7a7408ae4dfea5e961954</list_id>
+            <list_id display_value="x_snc_dev_meet_reimbursement" element="NULL" name="x_snc_dev_meet_reimbursement" parent="NULL" relationship="NULL" sys_domain="global" view="76bd01642f213010cd70e83df699b688">b26f357cdbc7a7408ae4dfea5e961954</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>2</position>
@@ -48,7 +48,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>reimbursement_amount</element>
-            <list_id display_value="x_snc_dev_meet_reimbursement" element="NULL" name="x_snc_dev_meet_reimbursement" parent="NULL" relationship="NULL" sys_domain="global" view="6d7c35f8dbc7a7408ae4dfea5e9619bc">b26f357cdbc7a7408ae4dfea5e961954</list_id>
+            <list_id display_value="x_snc_dev_meet_reimbursement" element="NULL" name="x_snc_dev_meet_reimbursement" parent="NULL" relationship="NULL" sys_domain="global" view="76bd01642f213010cd70e83df699b688">b26f357cdbc7a7408ae4dfea5e961954</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>3</position>
@@ -63,7 +63,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>event</element>
-            <list_id display_value="x_snc_dev_meet_reimbursement" element="NULL" name="x_snc_dev_meet_reimbursement" parent="NULL" relationship="NULL" sys_domain="global" view="6d7c35f8dbc7a7408ae4dfea5e9619bc">b26f357cdbc7a7408ae4dfea5e961954</list_id>
+            <list_id display_value="x_snc_dev_meet_reimbursement" element="NULL" name="x_snc_dev_meet_reimbursement" parent="NULL" relationship="NULL" sys_domain="global" view="76bd01642f213010cd70e83df699b688">b26f357cdbc7a7408ae4dfea5e961954</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>4</position>
@@ -78,7 +78,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>event.group</element>
-            <list_id display_value="x_snc_dev_meet_reimbursement" element="NULL" name="x_snc_dev_meet_reimbursement" parent="NULL" relationship="NULL" sys_domain="global" view="6d7c35f8dbc7a7408ae4dfea5e9619bc">b26f357cdbc7a7408ae4dfea5e961954</list_id>
+            <list_id display_value="x_snc_dev_meet_reimbursement" element="NULL" name="x_snc_dev_meet_reimbursement" parent="NULL" relationship="NULL" sys_domain="global" view="76bd01642f213010cd70e83df699b688">b26f357cdbc7a7408ae4dfea5e961954</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>5</position>
@@ -115,7 +115,7 @@
             <sys_updated_by>ajb</sys_updated_by>
             <sys_updated_on>2019-01-14 14:57:58</sys_updated_on>
             <sys_user/>
-            <view display_value="Rpt6d7c71f8dbc7a7408ae4dfea5e961943" name="RPT6d7c71f8dbc7a7408ae4dfea5e961943">6d7c35f8dbc7a7408ae4dfea5e9619bc</view>
+            <view display_value="Rpt6d7c71f8dbc7a7408ae4dfea5e961943" name="RPT6d7c71f8dbc7a7408ae4dfea5e961943">76bd01642f213010cd70e83df699b688</view>
             <view_name/>
         </sys_ui_list>
     </sys_ui_list>

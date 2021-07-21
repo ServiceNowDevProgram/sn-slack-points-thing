@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="Slack Event" max_length="40" name="x_snc_slack_points_slack_event" sizeclass="20003" type="collection">
+    <element label="Slack Event" max_length="40" name="x_snc_slack_points_slack_event" type="collection">
         <element label="Payload" max_length="4000" name="payload" type="string"/>
     </element>
 </database>

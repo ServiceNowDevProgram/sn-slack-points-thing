@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element extends="sys_import_set_row" label="Import Points" max_length="40" name="x_snc_slack_points_import" sizeclass="0" type="collection">
+    <element extends="sys_import_set_row" label="Import Points" max_length="40" name="x_snc_slack_points_import" type="collection">
         <element attributes="import_attribute_name=giver,edge_encryption_enabled=true" label="Giver" max_length="40" name="giver" type="string"/>
         <element attributes="import_attribute_name=target,edge_encryption_enabled=true" label="Target" max_length="40" name="target" type="string"/>
         <element attributes="import_attribute_name=text,edge_encryption_enabled=true" label="Text" max_length="1000" name="text" type="string"/>

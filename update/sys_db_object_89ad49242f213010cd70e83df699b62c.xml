@@ -11,9 +11,9 @@
         <delete_access>false</delete_access>
         <extension_model/>
         <is_extendable>false</is_extendable>
-        <label>Slack Point</label>
+        <label>Slack Event</label>
         <live_feed_enabled>false</live_feed_enabled>
-        <name>x_snc_slack_points_point</name>
+        <name>x_snc_slack_points_slack_event</name>
         <number_ref/>
         <provider_class/>
         <read_access>true</read_access>
@@ -23,18 +23,18 @@
         <sys_class_name>sys_db_object</sys_class_name>
         <sys_class_path/>
         <sys_created_by>josh.nerius</sys_created_by>
-        <sys_created_on>2017-08-21 21:20:15</sys_created_on>
-        <sys_id>6582775813b043009718b9b76144b006</sys_id>
+        <sys_created_on>2017-07-14 20:56:33</sys_created_on>
+        <sys_id>89ad49242f213010cd70e83df699b62c</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Slack Point</sys_name>
+        <sys_name>Slack Event</sys_name>
         <sys_package display_value="Slack Points Thing" source="x_snc_slack_points">4f6df3c813444f009718b9b76144b02c</sys_package>
         <sys_policy/>
         <sys_scope display_value="Slack Points Thing">4f6df3c813444f009718b9b76144b02c</sys_scope>
-        <sys_update_name>sys_db_object_6582775813b043009718b9b76144b006</sys_update_name>
+        <sys_update_name>sys_db_object_89ad49242f213010cd70e83df699b62c</sys_update_name>
         <sys_updated_by>josh.nerius</sys_updated_by>
-        <sys_updated_on>2017-08-21 21:20:15</sys_updated_on>
+        <sys_updated_on>2017-07-14 20:56:33</sys_updated_on>
         <update_access>false</update_access>
-        <user_role display_value="x_snc_slack_points.slack_point_user" name="x_snc_slack_points.slack_point_user">5fc2775813b043009718b9b76144b02a</user_role>
+        <user_role display_value="x_snc_slack_points.slack_event_user" name="x_snc_slack_points.slack_event_user">a5f00c5c13444f009718b9b76144b06b</user_role>
         <ws_access>true</ws_access>
     </sys_db_object>
 </record_update>
